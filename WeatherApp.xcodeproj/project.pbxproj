@@ -13,6 +13,8 @@
 		EC0C1C8D9958751DE71F389A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C139AFAF5345A1D6FC0CB /* ContentView.swift */; };
 		EC0C1CB8304E3CDF2E2FD1C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C139AFAF5345A1D6FC0CB /* ContentView.swift */; };
 		EC0C1E99E220261A9769246D /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C102E63AD236C98CDEF3D /* WeatherAppApp.swift */; };
+		F3BF221B27D8E64C00B8F113 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF221A27D8E64C00B8F113 /* WeatherButton.swift */; };
+		F3BF221C27D8E64C00B8F113 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF221A27D8E64C00B8F113 /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		EC0C14ECB2F2DC3317F10071 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0C162758DB516CCB019D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0C18206CC3EE6FBB7C6B01 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F3BF221A27D8E64C00B8F113 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 				EC0C162758DB516CCB019D74 /* Assets.xcassets */,
 				EC0C102E63AD236C98CDEF3D /* WeatherAppApp.swift */,
 				EC0C139AFAF5345A1D6FC0CB /* ContentView.swift */,
+				F3BF221A27D8E64C00B8F113 /* WeatherButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -120,11 +124,14 @@
 /* Begin PBXProject section */
 		EC0C16FC1696976B712770B4 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = EC0C149162BA228FC403141E /* Build configuration list for PBXProject "WeatherApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = EC0C1A1743C60DBC9236F9D2;
@@ -164,6 +171,7 @@
 			files = (
 				EC0C1B1BDE4C9D8538B502EB /* WeatherAppApp.swift in Sources */,
 				EC0C1C8D9958751DE71F389A /* ContentView.swift in Sources */,
+				F3BF221B27D8E64C00B8F113 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +181,7 @@
 			files = (
 				EC0C1E99E220261A9769246D /* WeatherAppApp.swift in Sources */,
 				EC0C1CB8304E3CDF2E2FD1C9 /* ContentView.swift in Sources */,
+				F3BF221C27D8E64C00B8F113 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +367,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -404,6 +412,7 @@
 				EC0C1AF373E4D2FDF5AD5CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC0C1CF5834402A592047227 /* Build configuration list for PBXNativeTarget "WeatherApp (iOS)" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +421,7 @@
 				EC0C19C4E04A61368ABC7216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
